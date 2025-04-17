@@ -51,9 +51,14 @@
             <version>${javafx.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.github.mkpaz</groupId>
-            <artifactId>atlantafx-base</artifactId>
-            <version>2.0.1</version>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-javafx</artifactId>
+            <version>12.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-fontawesome5-pack</artifactId>
+            <version>12.3.1</version>
         </dependency>
         <!--        <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -71,9 +76,6 @@
                 <configuration>
                     <mainClass>com.jfxwan.wanote.App</mainClass> <!-- your main class -->
                     <target>host</target>
-                    <javafx>
-                        <sdk>E:\Programs\javafx-sdk-21.0.7</sdk> <!-- this points to your JavaFX SDK -->
-                    </javafx>
                 </configuration>
             </plugin>
         </plugins>

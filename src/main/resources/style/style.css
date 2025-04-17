@@ -1,0 +1,126 @@
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 0, 0, 0, 0);
+}
+
+.my-button {
+    -fx-background-color: linear-gradient(to bottom, #fc3d44, #d32f2f);
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-padding: 8;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.my-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e53935, #b71c1c);
+}
+
+.button {
+    -fx-font-family: "Plus Jakarta Sans Regular";
+    -fx-font-size: 12px;
+    -fx-padding: 8;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-alignment: center;
+    -fx-graphic-text-gap: 8px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    /*-fx-border-width: 1px;*/
+}
+
+/* Primary Button */
+.button-primary {
+    -fx-background-color: linear-gradient(to bottom, #0d6efd, #0b5ed7);
+    -fx-text-fill: white;
+}
+.button-primary:hover {
+    -fx-background-color: #0b5ed7;
+}
+.button-primary:pressed {
+    -fx-background-color: #0a58ca;
+}
+
+/* Success Button */
+.button-success {
+    -fx-background-color: #198754;
+    -fx-text-fill: white;
+}
+.button-success:hover {
+    -fx-background-color: #157347;
+}
+.button-success:pressed {
+    -fx-background-color: #146c43;
+}
+
+/* Danger Button */
+.button-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+.button-danger:hover {
+    -fx-background-color: #bb2d3b;
+}
+.button-danger:pressed {
+    -fx-background-color: #b02a37;
+}
+
+/* Light Button */
+.button-light {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: black;
+    -fx-border-color: #ced4da;
+}
+.button-light:hover {
+    -fx-background-color: #e2e6ea;
+}
+.button-light:pressed {
+    -fx-background-color: #d6d8db;
+}
+
+/* Default Border-only Button */
+.button-default {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-color: #ced4da;
+}
+.button-default:hover {
+    -fx-background-color: #f8f9fa;
+}
+.button-default:pressed {
+    -fx-background-color: #e2e6ea;
+}
+
+.text-field {
+    -fx-font-family: "Plus Jakarta Sans Regular";
+    -fx-font-size: 14px;
+    -fx-text-fill: #495057;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 6;
+    -fx-prompt-text-fill: #adb5bd; /* placeholder text */
+    -fx-effect: null;
+    -fx-background-insets: 0;
+}
+
+/* Focused effect */
+.text-field:focused {
+    -fx-border-color: #86b7fe;
+    -fx-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    -fx-background-color: #ffffff;
+}
+
+.font-icon {
+    -fx-icon-color: #f8f9fa;
+    -fx-icon-size: 16px;
+}

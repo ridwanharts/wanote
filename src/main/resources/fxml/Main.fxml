@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.jfxwan.wanote.controller.MainController">
-   <VBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
-      <children>
-          <Label fx:id="label" text="Welcome to JavaFX with Spring!" />
-          <Button onAction="#onClickButton" text="Click Me" />
-      </children>
-   </VBox>
-</AnchorPane>
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfxwan.wanote.controller.MainController">
+    <center>
+        <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+            <VBox spacing="5.0" styleClass="card" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <Label fx:id="label" text="Welcome to JavaFX " />
+                    <Separator prefWidth="200.0">
+                        <VBox.margin>
+                            <Insets left="-5.0" right="-5.0" />
+                        </VBox.margin>
+                        <padding>
+                            <Insets bottom="5.0" top="5.0" />
+                        </padding>
+                    </Separator>
+                    <Button maxWidth="100.0" minWidth="100.0" onAction="#onClickButton" prefWidth="100.0" styleClass="button-default" text="Click Me" />
+                    <Button maxWidth="150.0" minWidth="150.0" onAction="#onClickButton" prefWidth="150.0" styleClass="button-light" text="Click Me" />
+                    <Button onAction="#onClickButton" styleClass="button-danger" text="Click Me" />
+                    <Button onAction="#onClickButton" styleClass="button-success" text="Click Me" />
+                    <Button onAction="#onClickButton" styleClass="button-primary" text="Click Me" />
+                    <Button onAction="#onClickButton" styleClass="my-button" text="Click Me" />
+                    <TextField styleClass="text-field" />
+                    <Button styleClass="button-default" text="Bookmark">
+                        <graphic>
+                            <FontIcon iconLiteral="fas-bookmark" iconSize="14" />
+                        </graphic>
+                    </Button>
+                    <Button styleClass="button-default" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                            mnemonicParsing="false"
+                            prefWidth="50.0">
+                        <graphic>
+                            <FontIcon iconLiteral="fab-facebook-square" iconSize="24"/>
+                        </graphic>
+                    </Button>
+                    <Button styleClass="button-default" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                            mnemonicParsing="false"
+                            prefWidth="50.0">
+                        <graphic>
+                            <FontIcon iconLiteral="fab-instagram" iconSize="24"/>
+                        </graphic>
+                    </Button>
+                </children>
+            </VBox>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </left>
+    <top>
+        <AnchorPane BorderPane.alignment="CENTER" />
+    </top>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <AnchorPane BorderPane.alignment="CENTER" />
+    </bottom>
+    <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+    </padding>
+</BorderPane>
